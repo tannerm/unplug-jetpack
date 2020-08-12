@@ -2,8 +2,8 @@
 Contributors:      tannerm
 Tags:              jetpack
 Requires at least: 3.5.1
-Tested up to:      4.0.0
-Stable tag:        0.1.0
+Tested up to:      5.5
+Stable tag:        1.0.0
 License:           GPLv2 or later
 License URI:       http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -31,6 +31,9 @@ If you find that the module you are interested in is not available after install
 
 
 == Changelog ==
+
+= 1.0.0 =
+* Replaced `jetpack_development_mode` hook with `jetpack_offline_mode` to support Jetpack versions 8.8+
 
 = 0.1.0 =
 * First release
