@@ -3,14 +3,14 @@
  * Plugin Name: Unplug Jetpack
  * Plugin URI:  http://wordpress.org/extend/plugins
  * Description: Enable qualifying Jetpack modules without a WordPress.com account
- * Version:     0.1.0
+ * Version:     1.0.0
  * Author:      Tanner Moushey
  * Author URI:  tannermoushey.com
  * License:     GPLv2+
  */
 
 /**
- * Copyright (c) 2014 Tanner Moushey (email : tanner@iwitnessdesign.com)
+ * Copyright (c) 2020 Tanner Moushey (email : tanner@missionlab.dev)
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License, version 2 or, at
@@ -28,6 +28,6 @@
  */
 
 function uj_init() {
-	add_filter( 'jetpack_development_mode', '__return_true' );
+	add_filter( 'jetpack_offline_mode', '__return_true' );
 }
 add_action( 'plugins_loaded', 'uj_init' );
